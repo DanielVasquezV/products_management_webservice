@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteRule ^vendedor/insertar$ controllers/vendedor_controller.php?opc=insertar [NC,L]
+RewriteRule ^vendedor/obtener$ controllers/vendedor_controller.php?opc=obtener [NC,L]
+RewriteRule ^producto/insertar$ controllers/producto_controller.php?opc=insertar [NC,L]
+RewriteRule ^producto/obtener$ controllers/producto_controller.php?opc=obtener [NC,L]
+RewriteRule ^venta/insertar$ controllers/venta_controller.php?opc=insertar [NC,L]
+RewriteRule ^venta/obtener$ controllers/venta_controller.php?opc=obtener [NC,L]
+RewriteRule ^detalle_venta/obtener$ controllers/detalle_venta_controller.php?opc=obtener [NC,L]

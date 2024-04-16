@@ -9,7 +9,3 @@ $connection = mysqli_connect($host, $user, $password, $database_name);
 if (!$connection) {
     die("Error de conexión: ". mysqli_connect_error());
 }
-
-echo "Conexión exitosa";
-
-mysqli_close($connection);
