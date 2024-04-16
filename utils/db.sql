@@ -23,8 +23,5 @@ CREATE TABLE venta (
     FOREIGN KEY (id_vendedor) REFERENCES vendedor(id_vendedor),
     FOREIGN KEY (id_producto) REFERENCES producto(id_producto)
 );
-DROP TABLE venta;
 
 DROP SCHEMA products_ws_bd;
-
-SELECT venta.id_venta, vendedor.nombre AS vendedor_nombre, vendedor.apellido AS vendedor_apellido, pr.nombre AS producto, venta.cantidad, venta.total, venta.fecha FROM venta venta JOIN vendedor vendedor ON venta.id_vendedor = vendedor.id_vendedor JOIN producto pr ON venta.id_producto = pr.id_producto
